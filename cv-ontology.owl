@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#done -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#done">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Projects"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#hasSkill -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#hasSkill">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#hasworked -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#hasworked">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#ProfessionalExperiance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#studiedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#studiedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Education"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Degree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Degree">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#University"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#NIC -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#NIC">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#address">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#contactno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#contactno">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#dateOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#dateOfBirth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#projectName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#projectName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Projects"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#schoolLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#schoolLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#School"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#schoolName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#schoolName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#School"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skillLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skillLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#TechnicalSkill"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skillName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skillName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#technologies -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#technologies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Projects"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#universityLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#universityLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#University"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#universityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#universityName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#University"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#workplace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#workplace">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#ProfessionalExperiance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Education"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#LanguageSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#LanguageSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#ProfessionalExperiance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#ProfessionalExperiance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Projects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Projects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#ProfessionalExperiance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#School">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Education"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#SoftSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#SoftSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#TechnicalSkill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#TechnicalSkill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#University">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Education"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#person-Lakshitha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#person-Lakshitha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Person"/>
+        <done rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#projects-Car_Parking_System"/>
+        <done rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#projects-_File_Management_System"/>
+        <done rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#projects-e-Lankapura"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-android"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-asp.net"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-communication"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-css"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-html"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-java"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-javascript"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-language-english"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-language-sinhala"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-problemsolving"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-teamwork"/>
+        <hasSkill rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-underpresure"/>
+        <hasworked rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#workplace-NELRC"/>
+        <studiedIn rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#university-University_of_kelaniya"/>
+        <studiedIn rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#school-st.john&apos;s_college"/>
+        <NIC rdf:datatype="http://www.w3.org/2001/XMLSchema#string">911890984v</NIC>
+        <address rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No, 1/44, Fonseka Road, Panadura.</address>
+        <contactno rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0712317234</contactno>
+        <dateOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1991-07-07</dateOfBirth>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lsandaras33@gmail.com</email>
+        <gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</gender>
+        <name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L.S.S.Premasiri</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#projects-Car_Parking_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#projects-Car_Parking_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#ProfessionalExperiance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Projects"/>
+        <projectName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Car Parking System (PMS – Parking Made Simple)</projectName>
+        <technologies rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C#, asp.net, android, Arduino, JavaScript</technologies>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#projects-_File_Management_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#projects-_File_Management_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#ProfessionalExperiance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Projects"/>
+        <projectName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">File Management System</projectName>
+        <technologies rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angular JS, JavaScript, PHP, Bootstrap, CSS, HTML</technologies>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#projects-e-Lankapura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#projects-e-Lankapura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#ProfessionalExperiance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Projects"/>
+        <projectName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e-lankapura web project</projectName>
+        <technologies rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Angular JS, JavaScript, PHP, Bootstrap, CSS, HTML, C#, asp.net</technologies>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-android -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-android">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#TechnicalSkill"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANDROID</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-arduino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-arduino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#TechnicalSkill"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">75%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARDUINO</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-asp.net -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-asp.net">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#TechnicalSkill"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">75%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">asp.net</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-communication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-communication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#SoftSkill"/>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interpersonal Communication</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-css -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-css">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#TechnicalSkill"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">75%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CSS</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-html -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-html">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#TechnicalSkill"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">80%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-java -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-java">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#TechnicalSkill"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Java</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-javascript -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-javascript">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#TechnicalSkill"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JAVASCRIPT</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-language-english -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-language-english">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#LanguageSkill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-language-sinhala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-language-sinhala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#LanguageSkill"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <skillLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">98%</skillLevel>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sinhala</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-problemsolving -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-problemsolving">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#SoftSkill"/>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Problem Solving</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-teamwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-teamwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#SoftSkill"/>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Team Work</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-underpresure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#skill-underpresure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Skills"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#SoftSkill"/>
+        <skillName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Under preasure</skillName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#university-University_of_kelaniya -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#university-University_of_kelaniya">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Education"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#University"/>
+        <Degree rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSc. in Software Engineering</Degree>
+        <universityLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dalugama, kelaniya</universityLocation>
+        <universityName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Kelaniya</universityName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#workplace-NELRC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#workplace-NELRC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#ProfessionalExperiance"/>
+        <workplace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NELRC</workplace>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#school-st.john&apos;s_college -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#school-st.john&apos;s_college">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#Education"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lakshitha/ontologies/2018/11/untitled-ontology-5#School"/>
+        <schoolLocation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">panadura</schoolLocation>
+        <schoolName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">st.Jhon&apos;s college</schoolName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+
